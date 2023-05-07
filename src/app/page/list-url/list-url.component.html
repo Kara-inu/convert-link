@@ -1,0 +1,26 @@
+<div class="container-fluid ">
+<div>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Full</th>
+                <th scope="col">Short</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody *ngIf="listLink.length > 0">
+            <tr *ngFor="let item of listLink; let i = index">
+                <th scope="row">{{i}}</th>
+                <td>{{item.full}}</td>
+                <td>{{item.short}}</td>
+                <td>
+                    <button mat-icon-button style="color: crimson;" aria-label="Delete" (click)="onDelete(item._id)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>

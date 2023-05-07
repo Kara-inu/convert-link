@@ -1,0 +1,33 @@
+$violet-light: #f8f3ff;
+$violet-2: #ebdcff;
+$violet-3: #e1cdff;
+$violet-4: #b98aff;
+$violet-5: #9a81be;
+
+body {
+    font-size: 10px; // change value to scale
+    font-family: Roboto, sans-serif;
+    background-color: $violet-light;
+    height: 100vh;
+    place-items: center;
+}
+
+.btn-active {
+    color: $violet-5 !important;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+}
+
+.example-full-width {
+    width: 100%;
+    margin-top: 30%;
+}
+

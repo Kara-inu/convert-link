@@ -1,0 +1,42 @@
+
+thead,
+tfoot {
+    background-color: #ee9dbb;
+    color: #fff;
+}
+
+tbody {
+    background-color: #fafaf0;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #efd4de;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+
+td,
+th {
+    border: 1px solid #efd4de;
+    padding: 5px 10px;
+}
+
+td {
+    text-align: center;
+}
+
+.input-padding {
+    margin: 2% 0 2% 0;
+}
+
+.error-text {
+    color: red;
+}
