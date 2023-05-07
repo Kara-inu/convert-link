@@ -25,7 +25,7 @@ export class CreateShortLinkComponent implements OnInit {
     private utils: UtilsService,
   ) {
     this.formLink = this.formBuilder.group({
-      inputLink: this.formBuilder.control('', [Validators.required, Validators.pattern('(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?')]),
+      inputLink: this.formBuilder.control('', [Validators.required, Validators.pattern('(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[-a-zA-Z0-9@:%._\\+~#?&//=]*/?')]),
     });
   }
   async ngOnInit(): Promise<void> {
