@@ -17,6 +17,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
 
 import { ExtraComponent } from './page/extra/extra.component';
 import { CreateShortLinkComponent } from './page/create-short-link/create-short-link.component';
@@ -47,7 +49,8 @@ import { RedirectComponent } from './interface/redirect/redirect.component';
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
-    MatTabsModule
+    MatTabsModule,
+    MatProgressSpinnerModule
 
   ],
   providers: [WINDOW_PROVIDERS,UtilsService],

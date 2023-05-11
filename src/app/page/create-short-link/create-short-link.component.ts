@@ -32,10 +32,7 @@ export class CreateShortLinkComponent implements OnInit {
     await this.getData()
     this.host = this.utils.getHost()
   }
-  onSend() {
-    console.log('input', this.formLink.valid)
-    console.log('host', this.utils.getHost())
-  }
+
   get fl() {
     return this.formLink.controls;
   }
@@ -52,7 +49,6 @@ export class CreateShortLinkComponent implements OnInit {
   }
 
   async onCreate() {
-    console.log(this.formLink.valid)
     let key = this.makeid(7)
     let createdData = {
       full: this.formLink.value.inputLink,
@@ -75,11 +71,12 @@ export class CreateShortLinkComponent implements OnInit {
   async getData() {
     this.request.getRequest(this.part)
       .subscribe(arg => {
-        console.log("arg", arg)
         arg.forEach(element => {
           this.listFull.push(element.full)
           this.listKey.push(element.short)
         });
       })
   }
+
+  
 }

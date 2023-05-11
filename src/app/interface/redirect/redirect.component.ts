@@ -23,7 +23,6 @@ export class RedirectComponent implements OnInit {
   async getData(id) {
     this.request.getRequest(this.part)
       .subscribe(arg => {
-        console.log("arg", arg)
         if(arg[0]){
           let url = arg[0].full
           window.location.href = url
